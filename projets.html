@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="bingbot" content="noindex, nofollow">
+    <title>Projets - Karim Merkache</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="accueil.html" class="logo">KM</a>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle">Mode sombre</button></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">Mes Projets</h2>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Rechercher par technologie (Python, Laravel, etc.)">
+            </div>
+
+            <div class="projects-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="stage">Stage</button>
+                <button class="filter-btn" data-filter="universitaire">Universitaire</button>
+                <button class="filter-btn" data-filter="perso">Personnel</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card" data-category="stage" data-tags="python,pandas,machine-learning,scikit-learn">
+                    <img src="images/project1.jpg" alt="Projet 1" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect fill=%22%234a90e2%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EProjet ML%3C/text%3E%3C/svg%3E'">
+                    <div class="project-content">
+                        <span class="project-badge">Stage</span>
+                        <h3>Système de Prédiction Client</h3>
+                        <p>Développement d'un modèle de machine learning pour prédire le comportement d'achat des clients.
+                           Utilisation de techniques de classification et d'optimisation des hyperparamètres.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="event.preventDefault()">Voir détails</a>
+                            <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card featured" data-category="universitaire" data-tags="python,tensorflow,deep-learning,keras">
+                    <img src="images/project2.jpg" alt="Projet 2" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect fill=%22%2334495e%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EDeep Learning%3C/text%3E%3C/svg%3E'">
+                    <div class="project-content">
+                        <span class="project-badge">Universitaire</span>
+                        <h3>Classification d'Images par Deep Learning</h3>
+                        <p>Création d'un réseau de neurones convolutif pour la classification d'images médicales.
+                           Atteinte d'une précision de 94% sur le dataset de test.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Keras</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="event.preventDefault()">Voir détails</a>
+                            <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="perso" data-tags="laravel,php,mysql,javascript">
+                    <img src="images/project3.jpg" alt="Projet 3" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect fill=%22%232c3e50%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EWeb App%3C/text%3E%3C/svg%3E'">
+                    <div class="project-content">
+                        <span class="project-badge">Personnel</span>
+                        <h3>Plateforme de Gestion de Tâches</h3>
+                        <p>Application web complète de gestion de projets et tâches avec authentification, tableau de bord
+                           interactif et système de notifications en temps réel.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="event.preventDefault()">Voir détails</a>
+                            <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="universitaire" data-tags="python,nlp,spacy,nltk">
+                    <img src="images/project4.jpg" alt="Projet 4" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect fill=%22%234a90e2%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3ENLP%3C/text%3E%3C/svg%3E'">
+                    <div class="project-content">
+                        <span class="project-badge">Universitaire</span>
+                        <h3>Analyse de Sentiments sur Réseaux Sociaux</h3>
+                        <p>Système d'analyse automatique des sentiments sur des publications Twitter. Traitement du langage
+                           naturel avec extraction d'entités nommées et classification émotionnelle.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">SpaCy</span>
+                            <span class="tag">NLTK</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="event.preventDefault()">Voir détails</a>
+                            <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="perso" data-tags="react,javascript,node,mongodb">
+                    <img src="images/project5.jpg" alt="Projet 5" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect fill=%22%2334495e%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EReact App%3C/text%3E%3C/svg%3E'">
+                    <div class="project-content">
+                        <span class="project-badge">Personnel</span>
+                        <h3>Dashboard Analytics Interactif</h3>
+                        <p>Interface moderne de visualisation de données en temps réel avec graphiques dynamiques.
+                           Architecture MERN stack complète avec API RESTful.</p>
+                        <div class="skill-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="event.preventDefault()">Voir détails</a>
+                            <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="stage" data-tags="python,spark,hadoop,big-data">
+                    <img src="images/project6.jpg" alt="Projet 6" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect fill=%22%232c3e50%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EBig Data%3C/text%3E%3C/svg%3E'">
+                    <div class="project-content">
+                        <span class="project-badge">Stage</span>
+                        <h3>Pipeline de Traitement Big Data</h3>
+                        <p>Mise en place d'une architecture distribuée pour le traitement de données massives.
+                           Optimisation des requêtes et réduction du temps de traitement de 60%.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Spark</span>
+                            <span class="tag">Hadoop</span>
+                            <span class="tag">Big Data</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="event.preventDefault()">Voir détails</a>
+                            <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="universitaire" data-tags="python,pytorch,computer-vision,opencv">
+                    <img src="images/project7.jpg" alt="Projet 7" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect fill=%22%234a90e2%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EComputer Vision%3C/text%3E%3C/svg%3E'">
+                    <div class="project-content">
+                        <span class="project-badge">Universitaire</span>
+                        <h3>Détection d'Objets en Temps Réel</h3>
+                        <p>Implémentation d'un système de détection et reconnaissance d'objets en temps réel
+                           utilisant des réseaux de neurones convolutifs avancés.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="event.preventDefault()">Voir détails</a>
+                            <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="perso" data-tags="vue,javascript,firebase,tailwind">
+                    <img src="images/project8.jpg" alt="Projet 8" class="project-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22%3E%3Crect fill=%22%2334495e%22 width=%22400%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EVue App%3C/text%3E%3C/svg%3E'">
+                    <div class="project-content">
+                        <span class="project-badge">Personnel</span>
+                        <h3>Application Mobile Progressive</h3>
+                        <p>PWA moderne avec fonctionnalités offline, notifications push et synchronisation en temps réel.
+                           Interface responsive et performance optimisée.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="event.preventDefault()">Voir détails</a>
+                            <a href="#" class="btn btn-secondary" onclick="event.preventDefault()">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="noResults" class="hidden" style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+                <p style="font-size: 1.2rem;">Aucun projet ne correspond à votre recherche.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Karim Merkache. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
